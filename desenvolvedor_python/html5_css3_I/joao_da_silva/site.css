@@ -1,0 +1,21 @@
+body{
+  font-family: "Crimson Text","Times New Roman", serif;  /* Por padrão a fonte deve ter uma opção default entre serif ou sans-serif */
+  background-color: #F2FFFC;
+}
+
+/* Títulos e Paragrafo */
+h1 {
+  font-family: "Open Sans Condensed","Arial", sans-serif;
+  color: #FFF;
+  background-color: #851944;
+  text-align: center;
+
+}
+h2{
+  font-family: "Open Sans Condensed","Arial", sans-serif;
+}
+
+p{
+  text-align: justify;
+
+}
