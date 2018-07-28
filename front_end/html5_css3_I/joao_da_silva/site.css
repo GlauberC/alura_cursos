@@ -7,52 +7,91 @@ body{
   line-height: 1.5;
 }
 
-blockquote{
+.citacao{
   background-color: #D9E5E3;
   padding: 20px;
+  margin: 20px 40px;
   border: 10px solid #C2CCCA;
   width: 250px;
   box-sizing: border-box;  /* Faz com que o valor de 250px da largura seja total, ou seja, considera o padding e border */
 }
 
-main h1{
+.titulo-principal{
   background-color: #851944;
   color: #FFF;
   text-align: center;
   padding: 25px;
   border-bottom: 10px solid #000;
+  font-size: 60px;
+  text-transform: uppercase;
 }
 
 /* Texto */
-div#texto{
+.texto{
   margin-left: auto;
   margin-right: auto;
   width: 720px;
+  padding: 30px 0;
 }
 
 h1, h2{
   font-family: "Open Sans Condensed","Arial", sans-serif;
+  font-size: 30px;
 }
-
 
 p{
   text-align: justify;
+  margin: 20px 0px;
 
 }
+strong{
+  font-weight: bold;
+}
+em{
+  font-style: italic;
 
+}
 /* nav  */
-aside{
+.navegacao-site h1{
+  margin-bottom: 25px;
+}
+
+
+.navegacao-site{
   background-color: #3C1D3D;
   color: #F2FFFC;
   padding: 20px;
 }
-aside a{
+.navegacao-site a{
   color: inherit;
   font-family: "Open Sans Condensed","Arial", sans-serif;
+  text-transform: lowercase;
+}
+.icones-redes-sociais li{
+  display: inline-block;
+
+}
+.icones-redes-sociais a{
+  width: 40px;
+  height: 40px;
+  display: block;
+    /* Image replacement */
+  text-indent: -99999px;
+  /* font-size: 0; */
+}
+.github{
+  background-image: url(github.png);
+}
+.twitter{
+  background-image: url(twitter.png);
+}
+.linkedin{
+  background-image: url(linkedin.png);
 }
 
+
 /* footer  */
-footer#rodape{
+.rodape{
   background-color: #000;
   color: #F2FFFC;
   padding: 20px;
@@ -87,4 +126,20 @@ div#triangulo{
     border-right: 30px solid transparent;
     width: 0;
     margin: 20px;
+}
+
+/* blog */
+.postagem{
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ccc
+}
+
+.leia-mais{
+  font-size: 24px;
+  margin: 16px;
+  padding: 8px;
+  text-align: center;
+  display: block;
+  background-color: #E6E7E8;
 }
