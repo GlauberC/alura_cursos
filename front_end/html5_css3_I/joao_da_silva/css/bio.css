@@ -1,0 +1,17 @@
+.citacao{
+  background-color: #D9E5E3;
+  padding: 20px;
+  margin: 20px 40px;
+  border: 10px solid #C2CCCA;
+  width: 250px;
+  box-sizing: border-box;  /* Faz com que o valor de 250px da largura seja total, ou seja, considera o padding e border */
+}
+.citacao cite{
+  font-style: italic;
+}
+.fiat{
+  float: right;
+}
+.petrobras{
+  float: left;
+}

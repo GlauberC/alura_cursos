@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="css/reset.css">
     <meta charset="utf-8">
     <title>Biografia - João da Silva</title>
-    <link rel="icon" href="favicon.png">
-    <link rel="stylesheet" href="site.css">
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/bio.css">
 
     <!-- carrega a fonte Crimson Text nas versões normal, itálico e negrito -->
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600">
@@ -18,14 +19,16 @@
 
   <body>
     <main>
-      <h1 class = "titulo-principal">Sobre mim</h1>
-      <div class="texto">
+      <header>
+        <h1 class = "titulo-principal">Sobre mim</h1>
+      </header>
+      <div class="container">
         <p>Moro em São Paulo mas atendo clientes do mundo todo. Sou conhecido por fazer produtos de <em>qualidade</em>, <em>durabilidade</em> e que <em>agregam valor</em> para meus clientes.</p>
 
         <p>Trabalho usando a web como plataforma, ou seja, respiro HTML5, CSS3 e JavaScript (ou melhor: ECMASCript). Crio sites para todos, seguindo as principais diretivas de <strong>acessibilidade</strong>, <strong>responsividade</strong> e <strong>web semântica</strong>, sem descuidar da qualidade de código.</p>
 
-        <h2>Como trabalho</h2>
-        <blockquote class = "citacao">
+        <h2 class="subtitulo-texto">Como trabalho</h2>
+        <blockquote class = "citacao fiat">
           <p>João é o melhor desenvolvedor front-end com quem já trabalhei. Muito eficiente e muito capaz. Recomendo sem dúvidas!</p>
           <cite>-- José Souza, Fiat</cite>
         </blockquote>
@@ -34,9 +37,9 @@
 
         <p>Também não trabalho com prazos fechados: qualidade é importante demais para ser sacrificada.</p>
 
-        <h2>Experiência</h2>
+        <h2 class="subtitulo-texto">Experiência</h2>
 
-        <blockquote class = "citacao">
+        <blockquote class = "citacao petrobras">
           <p>    João domina as tecnologias como ninguém. Eu apresentava um problema, ele tinha na ponta da língua a solução mais adequada com as tecnologias mais recentes.</p>
           <cite>-- Manoel Santos, Petrobrás</cite>
         </blockquote>
@@ -45,12 +48,12 @@
 
         <p>Também já fui contratado para transformar grandes portais, como <a href = "http://www.terra.com.br">Terra</a> e <a href="http://www.g1.com.br">G1</a>, em páginas responsivas. Fui responsável por renovar o layout, reorganizar o conteúdo e re-escrever o código de forma mais reaproveitável.</p>
 
-        <h2>Comunidade</h2>
+        <h2 class="subtitulo-texto">Comunidade</h2>
 
         <p>Procuro repassar meu conhecimento para a comunidade. Para isso, já dei <a href="portifolio.html">diversas palestras</a> e mantenho <a href = "blog.html">um blog</a>.</p>
       </div>
     </main>
-    <img src="eu.jpg" alt="Foto de João da Silva">    <!-- O alt auxilia nos algoritmos de pesquisa e também na acessibilidade para pessoas com problemas na visão -->
+    <img class = "img-eu" src="img/eu.jpg" alt="Foto de João da Silva">    <!-- O alt auxilia nos algoritmos de pesquisa e também na acessibilidade para pessoas com problemas na visão -->
 
     <aside class = "navegacao-site">
       <h1>João da Silva</h1>

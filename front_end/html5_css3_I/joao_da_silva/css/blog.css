@@ -1,0 +1,15 @@
+/* blog */
+.postagem{
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ccc
+}
+
+.leia-mais{
+  font-size: 24px;
+  margin: 16px;
+  padding: 8px;
+  text-align: center;
+  display: block;
+  background-color: #E6E7E8;
+}
