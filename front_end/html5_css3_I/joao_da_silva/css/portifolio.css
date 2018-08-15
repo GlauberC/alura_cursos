@@ -1,0 +1,19 @@
+.caixa-de-imagens figure{
+  border: 8px solid #000;
+  background-color: #FAFFFC;
+  width: 45%;
+  box-sizing: border-box;
+  padding: 15px;
+  text-align: justify;
+  margin: 17px;
+}
+.caixa-de-imagens figure img {
+  box-sizing: border-box;
+  width: 100%
+}
+.figure-g1, .figure-uol{
+  float: right;
+}
+.figure-bmw, .figure-ibm{
+  float: left;
+}
