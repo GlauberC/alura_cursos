@@ -21,20 +21,40 @@ class Perfil(object):
     def obter_curtidas(self):
         return self.__curtidas
 
+    @staticmethod
+    def gerar_perfis(nome_arquivo):
+        perfis = []
+        arquivo = open(nome_arquivo, 'r')
+        for linha in arquivo:
+            valores = linha.split(',')
+            if(len(valores) is not 3):
+                raise Perfil_Error('Uma linha no arquivo deve ter 3 valores')
+            perfis.append(Perfil(*valores))
+            print(valores)
+        arquivo.close()
+        return perfis
+
 class Perfil_Vip(Perfil):
     'Classe para perfil de usuario vip'
-    def __init__(self, nome, telefone, empresa, apelido):
+    def __init__(self, nome, telefone, empresa, apelido=''):
         super(Perfil_Vip, self).__init__(nome, telefone, apelido)
         self.apelido = apelido
 
     def obter_credito(self):
         return super(Perfil_Vip, self).obter_curtidas() * 10.0
 
-vip = Perfil_Vip('Glauber', '3222-2222', 'UFRN', 'GlauGlau')
-vip.curtir()
-vip.curtir()
-print vip.obter_credito()
-print vip.apelido
+class Perfil_Error(Exception):
+    def __init__(self, mensagem):
+        self.mensagem = mensagem
+
+    def __str__(self):
+        return repr(self.mensagem)
+
+# vip = Perfil_Vip('Glauber', '3222-2222', 'UFRN', 'GlauGlau')
+# vip.curtir()
+# vip.curtir()
+# print vip.obter_credito()
+# print vip.apelido
 
 
 # FUNÇÃO MAIN
@@ -50,3 +70,5 @@ print vip.apelido
 # print perfil.curtidas
 # perfil.curtir()
 # perfil.mostrar_curtidas()
+
+perfil = Perfil.gerar_perfis('perfis.csv')
