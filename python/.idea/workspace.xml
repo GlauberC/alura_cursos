@@ -11,34 +11,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="conta.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python3_Introducao_a_POO/Aula03/conta.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Anki.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/python3_Introducao_a_POO/Anki.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="32" column="22" lean-forward="true" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+            <state relative-caret-position="542">
+              <caret line="143" column="20" selection-start-line="143" selection-start-column="20" selection-end-line="143" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="conta.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python3_Introducao_a_POO/Aula04/conta.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="data.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python3_Introducao_a_POO/Aula03/data.py">
+        <entry file="file://$PROJECT_DIR$/python3_Introducao_a_POO/Aula06/conta.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="330">
+              <caret line="46" selection-start-line="46" selection-end-line="48" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -73,6 +59,10 @@
         <option value="$PROJECT_DIR$/python3_Introducao_a_POO/Aula02/conta.py" />
         <option value="$PROJECT_DIR$/python3_Introducao_a_POO/Aula03/conta.py" />
         <option value="$PROJECT_DIR$/python3_Introducao_a_POO/Aula03/data.py" />
+        <option value="$PROJECT_DIR$/python3_Introducao_a_POO/Aula04/conta.py" />
+        <option value="$PROJECT_DIR$/python3_Introducao_a_POO/Aula05/cliente.py" />
+        <option value="$PROJECT_DIR$/python3_Introducao_a_POO/Aula05/conta.py" />
+        <option value="$PROJECT_DIR$/python3_Introducao_a_POO/Aula06/conta.py" />
         <option value="$PROJECT_DIR$/python3_Introducao_a_POO/Anki.py" />
       </list>
     </option>
@@ -104,7 +94,7 @@
               <item name="python" type="b2602c69:ProjectViewProjectNode" />
               <item name="python" type="462c0819:PsiDirectoryNode" />
               <item name="python3_Introducao_a_POO" type="462c0819:PsiDirectoryNode" />
-              <item name="Aula03" type="462c0819:PsiDirectoryNode" />
+              <item name="Aula06" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -117,14 +107,14 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/python3_Introducao_a_POO" />
-      <recent name="$PROJECT_DIR$/python3_avancando" />
-      <recent name="$PROJECT_DIR$/python3_introducao" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/python3_avancando" />
       <recent name="$PROJECT_DIR$/python3_introducao/aula01" />
+      <recent name="$PROJECT_DIR$/python3_introducao" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/python3_Introducao_a_POO" />
+      <recent name="$PROJECT_DIR$/python3_avancando" />
       <recent name="$PROJECT_DIR$/python3_introducao" />
     </key>
   </component>
@@ -140,7 +130,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Anki">
+  <component name="RunManager" selected="Python.conta">
     <configuration name="Anki" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -159,7 +149,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="conta (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="cliente" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -167,11 +157,47 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python3_Introducao_a_POO/Aula03" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python3_Introducao_a_POO/Aula05" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python3_Introducao_a_POO/Aula03/conta.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python3_Introducao_a_POO/Aula05/cliente.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="conta (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python3_Introducao_a_POO/Aula04" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python3_Introducao_a_POO/Aula04/conta.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="conta (3)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python3_Introducao_a_POO/Aula05" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python3_Introducao_a_POO/Aula05/conta.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -185,66 +211,30 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python3_Introducao_a_POO/Aula02" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python3_Introducao_a_POO/Aula06" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python3_Introducao_a_POO/Aula02/conta.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="data" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python3_Introducao_a_POO/Aula03" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python3_Introducao_a_POO/Aula03/data.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="forca" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python3_avancando" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python3_avancando/forca.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python3_Introducao_a_POO/Aula06/conta.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.forca" />
-      <item itemvalue="Python.conta" />
-      <item itemvalue="Python.conta (1)" />
-      <item itemvalue="Python.data" />
       <item itemvalue="Python.Anki" />
+      <item itemvalue="Python.conta (2)" />
+      <item itemvalue="Python.conta (3)" />
+      <item itemvalue="Python.cliente" />
+      <item itemvalue="Python.conta" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Anki" />
-        <item itemvalue="Python.data" />
-        <item itemvalue="Python.conta (1)" />
         <item itemvalue="Python.conta" />
-        <item itemvalue="Python.forca" />
+        <item itemvalue="Python.Anki" />
+        <item itemvalue="Python.conta (3)" />
+        <item itemvalue="Python.cliente" />
+        <item itemvalue="Python.conta (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -297,23 +287,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/python3_avancando/jogos.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python3_avancando/palavras.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python3_avancando/adivinhacao.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/python3_avancando/Perguntas_anki.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1425">
@@ -607,12 +580,9 @@
     <entry file="file://$PROJECT_DIR$/python3_Introducao_a_POO/Aula03/conta.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python3_Introducao_a_POO/Aula04/conta.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/python3_Introducao_a_POO/Aula03/data.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -621,10 +591,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/python3_Introducao_a_POO/Aula04/conta.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python3_Introducao_a_POO/Aula05/cliente.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="11" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python3_Introducao_a_POO/Aula05/conta.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="39" column="6" lean-forward="true" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python3_Introducao_a_POO/Aula06/conta.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="46" selection-start-line="46" selection-end-line="48" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/python3_Introducao_a_POO/Anki.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="32" column="22" lean-forward="true" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+        <state relative-caret-position="542">
+          <caret line="143" column="20" selection-start-line="143" selection-start-column="20" selection-end-line="143" selection-end-column="20" />
         </state>
       </provider>
     </entry>

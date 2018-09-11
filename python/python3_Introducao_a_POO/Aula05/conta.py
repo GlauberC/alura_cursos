@@ -21,11 +21,25 @@ class Conta:
         self.saca(valor)
         conta.deposita(valor)
 
+    @property
+    def saldo(self):
+        return self.__saldo
+
+    @property
+    def titular(self):
+        return self.__titular
+
+    @property
+    def limite(self):
+        return self.__limite
+
+    @limite.setter
+    def limite(self, limite):
+        self.__limite = limite
+
 # Main
 c = Conta(1234, "Glauber", 100, 1000)
-c2 = Conta(1235, "Paulo", 200, 1500)
-
-c.transfere(c2, 50)
-c.extrato()
-c2.extrato()
+print('{},{},{}'.format(c.titular, c.saldo, c.limite))
+c.limite = 2000
+print('{},{},{}'.format(c.titular, c.saldo, c.limite))
 print()
