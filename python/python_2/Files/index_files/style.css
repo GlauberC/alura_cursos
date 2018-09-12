@@ -1,0 +1,153 @@
+/* INDEX */
+button.btn-hidden{
+    display: none;
+}
+li#explore:hover{
+    cursor: pointer;
+}
+li#verify:hover{
+    cursor: pointer;
+}
+span.challenge{
+    color: #b20113;
+}
+
+/* MODAL */
+div.modal-body h3{
+    font-size: 14pt;
+}
+div.modal-body td{
+    font-size: 11pt;
+}
+ul.about-list{
+    list-style-type: circle;
+}
+p.about-p{
+    text-align: justify;
+    font-size: 11pt;
+}
+ul.about-list li{
+    margin-bottom: 0.3em;
+}
+section.container-property div{
+    padding-left: 1.2em;
+}
+
+/* Verify */
+.prop{
+  margin-top: 15px;
+}
+
+/* GRAPH */
+.link {stroke: rgba(0, 0, 0, .8); stroke-opacity: .4; stroke-width: 1.6px;}
+div#info-node-link{
+    margin: 2em;
+}
+small#node{
+    font-size: .6em
+}
+
+td{
+    font-size: .8em
+}
+svg{
+    box-shadow: 1px 1px 1px 2px rgba(222,222,222,0.2);
+    width: 2000px;
+    height: 2000px;
+
+}
+
+div#graph-container{
+    overflow: scroll;
+    height: 50vh;
+    width: 60vw;
+}
+.dropdown-scrollable{
+    height: 15vh;
+    overflow-y: scroll;
+}
+
+/* PARSE */
+button.btnParse{
+    margin-bottom: 1em;
+    margin-right: 3em;
+}
+.popover{
+    max-width: 40vw; /* Max Width of the popover (depending on the container!) */
+}
+
+/* LOADING */
+.loader {
+    border: 5px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 5px solid #3498db;
+    width: 40px;
+    height: 40px;
+    -webkit-animation: spin 1s linear infinite; /* Safari */
+    animation: spin 1s linear infinite;
+  }
+
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+/* Textarea line. Found on  http://alan.blog-city.com/jquerylinedtextarea.htm*/
+
+textarea.lined{
+    width: 58vw;
+    height: 30vh;
+    background: rgba(233, 233, 233, 0.3);
+}
+
+.linedwrap {
+	padding: 3px;
+}
+
+.linedtextarea {
+	padding: 0px;
+    margin-top: 18px;
+}
+
+.linedtextarea textarea, .linedwrap .codelines .lineno {
+    font-size: 10pt;
+	font-family: monospace;
+	line-height: normal !important;
+}
+
+.linedtextarea textarea {
+	padding-right:0.3em;
+	padding-top:0.3em;
+	border: 0;
+}
+
+.linedwrap .lines {
+	margin-top: 18px;
+	width: 50px;
+	float: left;
+	overflow: hidden;
+	border-right: 1px solid #c0c0c0;
+	margin-right: 10px;
+}
+
+.linedwrap .codelines {
+	padding-top: 5px;
+}
+
+.linedwrap .codelines .lineno {
+	color:#AAAAAA;
+	padding-right: 0.5em;
+	padding-top: 0.0em;
+	text-align: right;
+	white-space: nowrap;
+}
+
+.linedwrap .codelines .lineselect {
+	color: red;
+}

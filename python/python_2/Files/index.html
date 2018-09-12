@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <script src="index_files/d3.js" type="text/javascript"></script>
+  <script src="index_files/d3-selection-multi.js"></script>
+  <script src="index_files/jquery.js"></script>
+  <link rel="stylesheet" href="index_files/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="index_files/style.css">
+  <script src="index_files/bootstrap.js"></script>
+  <script src="index_files/graph.js"></script>
+  <script src="index_files/examples.js"></script>
+
+
+
+<style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+<!--BOOTSTRAP NAV: https://bootsnipp.com/snippets/featured/inline-navbar-search -->
+<!--  -->
+
+
+<body class="vsc-initialized">
+  <main class="container-full">
+    <header>
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#silver-navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://127.0.1.1/project-graph_silver/index.html">SiLVer Graph</a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="silver-navbar-collapse">
+            <ul class="nav navbar-nav nav-tabs">
+              <li id="edit" class="">
+                <a id="edit" data-toggle="tab" href="#tab_edit">Edit</a>
+              </li>
+
+              <li id="explore">
+                <a id="id_tab2">Explore</a>
+              </li>
+              <li id="verify" class="active">
+                <a id="id_tab2">Verify</a>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Examples
+                  <span class="glyphicon glyphicon-menu-down"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="exampleDropdown" href="#" onclick="exampleRestrictions()">Restrictions</a>
+                  </li>
+                  <li>
+                    <a class="exampleDropdown" href="#" onclick="exampleSequentialProcesses()">Sequential Processes</a>
+                  </li>
+                  <li>
+                    <a class="exampleDropdown" href="#" onclick="exampleParallel()">Parallel composition</a>
+                  </li>
+                  <li>
+                    <a class="exampleDropdown" href="#" onclick="exampleParallelTauTransitions()">Parallel composition (tau transitions)</a>
+                  </li>
+                  <li class="divider"></li>
+                  <li>
+                    <a class="exampleDropdown" href="#" onclick="example3Dinnigs()">
+                      <span class="challenge">3 Dinning Philosophers</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="exampleDropdown" href="#" onclick="examplePeterson()">
+                      <span class="challenge">Peterson Algorithm</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a data-toggle="modal" href="#syntax-modal">Syntax</a>
+              </li>
+              <li>
+                <a data-toggle="modal" href="#about-modal">About</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+      </nav>
+    </header>
+
+    <section class="container tab-content">
+      <button id="hidden-explore" class="btn-hidden" data-toggle="tab" data-target="#tab_explore"></button>
+      <button id="hidden-verify" class="btn-hidden" data-toggle="tab" data-target="#tab_verify"></button>
+      <!-- About Modal -->
+      <section id="about-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">×</button>
+              <h4 class="modal-title">About</h4>
+            </div>
+            <div class="modal-body">
+              <h4 class="modal-title">
+                <b>SiLVer: Symbolic links verifier</b>
+              </h4>
+              <br>
+              <p class="about-p">
+                The Core Network Algebra (CNA) is a model for 
+concurrency that extends the point-to-point communication discipline of 
+Milner’s
+                <a href="https://en.wikipedia.org/wiki/Calculus_of_communicating_systems">CCS</a> with multiparty interactions. Links are used to build chains describing how information
+                flows among the different agents participating in a multiparty interaction.
+                <br>
+                <br>
+
+                <a href="https://gitlab.com/carlos_olarte/SiLVer">SiLVer</a> is a tool written in
+                <a href="http://maude.cs.illinois.edu/w/index.php?title=The_Maude_System">Maude</a> for the animation and verification of CNA processes. Currently, the tool allows
+                for:
+                </p><ul class="about-list">
+                  <li>Defining processes and processes definitions.</li>
+                  <li>Generating traces from a given process.</li>
+                  <li>Building the label transition system generated from a process (in the case of finite
+                    processes)
+                  </li>
+                  <li>Generating a DOT file with the transition system of a process.</li>
+                  <li>Specifying properties of the system using Symbolic Link Modal Logic (SLML) and verify
+                    them using a model checking algorithm. </li>
+                    <li>Checking whether 2 processes are network-bisimilar.</li>
+                  </ul>
+                  <br> A web interface os SiLVer is also available
+                  <a href="http://subsell.logic.at/links/">here</a>.
+                  <br>
+                  <br> Details on the (symbolic) verification techniques for CNA processes can be found in: Linda
+                  Brodo, Carlos Olarte:
+                  <a href="https://link.springer.com/chapter/10.1007%2F978-3-319-51963-0_6">Symbolic Semantics for Multiparty Interactions in the Link-Calculus</a>. SOFSEM 2017: LNCS
+                  (10139), pages 62-75. Springer 2017.
+                  <br>
+                  <br>
+                  <b> Code ⇦ Subtitle</b>
+                  <br>The specification in Maude as well as the PHP files for the web interface are available at
+                  <a href="https://gitlab.com/carlos_olarte/SiLVer">SiLVer</a> site. The web interface was inspired on the
+                  <a href="http://caal.cs.aau.dk/">CAAL</a> project.
+                  <br>
+                  <br>
+                  <b>Authors ⇦ Subtitle</b>
+                  <br> Web interface:
+                  <a href="https://github.com/GlauberC">Glauber Carvalho.</a>
+                  <br>
+                  <a href="https://sites.google.com/site/carlosolarte/">Carlos Olarte. </a>
+                  <br>
+                  <br>
+                  <b>Contact ⇦ Subtitle</b>
+                  <br>
+                  <a href="https://sites.google.com/site/carlosolarte/">Carlos Olarte </a>
+
+                <p></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+
+          </div>
+        </section>
+        <!--About modal-->
+        <section id="syntax-modal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">Process Network Algebra</h4>
+              </div>
+              <div class="modal-body">
+                <h3>Process definitions should start with capital letters and channel names with small letters.
+                  <br>
+                  <br>
+                </h3>
+                <table class="table table-condensed">
+                  <thead>
+                    <tr><th>CNA Expression </th>
+                    <th>Syntax</th>
+                  </tr></thead>
+                  <tbody>
+                    <tr>
+                      <td>Nil Process</td>
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td>Definition</td>
+                      <td>A = P</td>
+                    </tr>
+                    <tr>
+                      <td>Link prefix</td>
+                      <td>a \ b . P</td>
+                    </tr>
+                    <tr>
+                      <td>Guarded Choice</td>
+                      <td>a \ b . P + c \ d . Q</td>
+                    </tr>
+                    <tr>
+                      <td>Parallel Composition</td>
+                      <td>P | Q</td>
+                    </tr>
+                    <tr>
+                      <td>Restriction</td>
+                      <td>[a , b ] P</td>
+                    </tr>
+                    <tr>
+                      <td>Recursion</td>
+                      <td>{ A }</td>
+                    </tr>
+                    <tr>
+                      <td>Comment</td>
+                      <td># line of comments</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+
+          </div>
+        </section>
+        <!--Syntax modal-->
+
+        <section id="tab_edit" class="tab-pane fade">
+          <div class="row">
+            <div class="loaderParse col-lg-4 col-lg-offset-4"></div>
+            <button class="btnParse btn btn-default pull-right" onclick="parsing('')" parse="" data-original-title="" title="">Parse</button>
+          </div>
+          <div class="row">
+            <form>
+              <div class="form-group">
+                <label for="graph">New Graph:</label>
+                <div class="linedwrap" style="width:1112.43px"><div class="lines" style="width: 50px; height: 206px;"><div class="codelines"><div class="lineno lineselect">1</div><div class="lineno">2</div><div class="lineno">3</div><div class="lineno">4</div><div class="lineno">5</div><div class="lineno">6</div><div class="lineno">7</div><div class="lineno">8</div><div class="lineno">9</div><div class="lineno">10</div><div class="lineno">11</div><div class="lineno">12</div><div class="lineno">13</div></div></div><div class="linedtextarea" style="width:60vw;height: 30vh;"><textarea class="lined" rows="5" name="graph" placeholder="Type commands on different lines. Comments can be typing with # on beginning of line" style="resize: none; width: 1041.43px;" wrap="off"># In A1, a\b may synchronize with b\a. If a\b reduces, then b\a can also synchronize with e\f
+A1 = a \ b . { B}  |  b \ a . { B}
+# In this case, a\b must synchronize with b\a
+A2 = [a] a \ b . { B}  |  b \ a . { B}
+B = e \ f . 0</textarea></div></div>
+              </div>
+            </form>
+          </div>
+        </section>
+        <!-- EDIT -->
+        <section id="tab_explore" class="tab-pane fade">
+          <div id="graph_txt">
+            <!-- This is the text that will be updated -->
+
+          </div>
+
+        </section>
+        <!-- EXPLORE -->
+        <section id="tab_verify" class="tab-pane fade active in">
+          <div id="verifyPHP">
+            <div id="verify_list">
+              <nav>
+                <a class="btn btn-default" data-toggle="modal" href="#property-modal" onclick="addPropClick()">Add Property</a>
+                <button class="btn btn-default pull-right">Verify All</button>
+                <button class="btn btn-default pull-right disabled">Stop</button>
+              </nav>
+              <div class="table">
+                <table class="table-verify table">
+                  <thead>
+                    <tr><th>Status</th>
+                    <th>Time</th>
+                    <th>Property &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th>Verify</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                  </tr></thead>
+                  <tbody class="verify-list">
+
+                  <tr><td> <span class="glyphicon glyphicon-option-horizontal"></span> </td><td> <span class="glyphicon glyphicon-option-horizontal"></span> </td><td>test</td><td><span class="glyphicon glyphicon-play-circle btn btn-sm" onclick="verify_action() maude=" test''=""></span></td><td><span class="glyphicon glyphicon-pencil btn btn-sm"></span></td><td><span class="glyphicon glyphicon-trash btn btn-sm"></span></td></tr></tbody>
+
+                </table>
+
+              </div>
+            </div>
+            <section id="property-modal" class="container-property container modal fade" role="dialog" style="display: none;">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">
+                    <b>Add/Edit Property</b>
+                  </h4>
+                </div>
+                <div class="modal-body">
+                  <h3>Property Type</h3>
+                  <div class="radio">
+                    <label>
+                      <input id="equivalence" class="radioProp" name="property-type" value="0" onclick="propEquivalence()" checked="checked" type="radio">Equivalence/Preorder Checking</label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input id="model" class="radioProp" name="property-type" value="1" onclick="propModel()" type="radio">Model Checking</label>
+                      </div>
+                    </div>
+                    <div id="propEqui" class="prop-option" style="">
+                      <div class="selected-equivalence row">
+                        <div>
+                          <div class="left-process col-lg-6">
+                            <label for="left">Left process</label><br>
+                            <select id="leftp" class="btn btn-default">
+                            <option selected="selected"> A1   </option><option> A2   </option><option> B   </option>
+                            </select>
+                          </div>
+                          <div class="right-process col-lg-6">
+                            <label for="right">Right process</label><br>
+                            <select id="rightp" class="btn btn-default">
+                            <option selected="selected"> A1   </option><option> A2   </option><option> B   </option>
+                            </select>
+                          </div>
+                          <div class="prop form-group col-lg-8">
+                            <label for="property-id">Property ID:</label>
+                            <input class="form-control property-id" value="test" type="text">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  <div id="propMod" class="prop-option" style="display: none;">
+                    <div class="selected-model row">
+                      <div>
+                        <div class="left-model-process col-lg-3">
+                          <label for="left">Left process</label><br>
+                          <select id="leftp" class="btn btn-default model-process-select">
+                          <option selected="selected"> A1   </option><option> A2   </option><option> B   </option>
+                          </select>
+                        </div>
+                        <div class="left-model-process col-lg-1">
+                          <h3>=</h3>
+                        </div>
+                        <div class="right-process col-lg-8">
+                          <label for="property-id">Formula</label>
+                          <input class="form-control formula-id" type="text">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn-prop btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn-prop btn-prop-save btn btn-primary" onclick="savebtn()" data-dismiss="modal">Save</button>
+                  </div>
+                </div>
+
+</section></div>
+            </section>  <!-- Property modal -->
+            </section>  <!-- VERIFY -->
+            <!-- container -->
+        </main>
+
+      
+
+
+      
+</body></html>
