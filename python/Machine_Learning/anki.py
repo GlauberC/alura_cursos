@@ -23,3 +23,10 @@ dado_misterioso1 = [0, 0, 0]
 dado_misterioso2 = [1, 1, 1]
 vetor_misterioso = [dado_misterioso1, dado_misterioso2]
 print(modelo.predict(vetor_misterioso))
+
+
+#Como abrir um arquivo csv chamado acesso.csv
+import csv
+
+arquivo = open('acesso.csv', 'r')
+leitor = csv.reader(arquivo)
