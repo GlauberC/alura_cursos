@@ -14,33 +14,36 @@
       <file leaf-file-name="anki.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Machine_Learning/anki.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="33" lean-forward="true" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+            <state relative-caret-position="-1378">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dados.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Machine_Learning/Aula02/dados.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="classifica_dados.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Machine_Learning/Aula02/classifica_dados.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="acesso.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Machine_Learning/Aula02/acesso.csv">
+      <file leaf-file-name="dados.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Machine_Learning/Aula03/dados.py">
           <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="classifica_dados.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Machine_Learning/Aula03/classifica_dados.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+              <folding>
+                <element signature="e#1#46#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="buscas.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Machine_Learning/Aula03/buscas.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="12" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="12" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -82,9 +85,11 @@
         <option value="$PROJECT_DIR$/Machine_Learning/Aula01/classificacao.py" />
         <option value="$PROJECT_DIR$/Machine_Learning/Aula01/meu_exemplo.py" />
         <option value="$PROJECT_DIR$/Machine_Learning/Aula02/classificacao.py" />
+        <option value="$PROJECT_DIR$/Machine_Learning/Aula02/dados.py" />
         <option value="$PROJECT_DIR$/Machine_Learning/Aula02/classifica_dados.py" />
         <option value="$PROJECT_DIR$/Machine_Learning/anki.py" />
-        <option value="$PROJECT_DIR$/Machine_Learning/Aula02/dados.py" />
+        <option value="$PROJECT_DIR$/Machine_Learning/Aula03/dados.py" />
+        <option value="$PROJECT_DIR$/Machine_Learning/Aula03/classifica_dados.py" />
       </list>
     </option>
   </component>
@@ -98,6 +103,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -114,19 +120,18 @@
               <item name="python" type="b2602c69:ProjectViewProjectNode" />
               <item name="python" type="462c0819:PsiDirectoryNode" />
               <item name="Machine_Learning" type="462c0819:PsiDirectoryNode" />
-              <item name="Aula01" type="462c0819:PsiDirectoryNode" />
+              <item name="Aula02" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="python" type="b2602c69:ProjectViewProjectNode" />
               <item name="python" type="462c0819:PsiDirectoryNode" />
               <item name="Machine_Learning" type="462c0819:PsiDirectoryNode" />
-              <item name="Aula02" type="462c0819:PsiDirectoryNode" />
+              <item name="Aula03" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -134,17 +139,17 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Machine_Learning" />
+      <recent name="$PROJECT_DIR$/Machine_Learning/Aula02" />
+      <recent name="$PROJECT_DIR$/python3_Introducao_a_POO" />
+      <recent name="$PROJECT_DIR$/python3_avancando" />
+      <recent name="$PROJECT_DIR$/python3_introducao" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Machine_Learning/Aula01" />
       <recent name="$PROJECT_DIR$/python3_avancando" />
       <recent name="$PROJECT_DIR$/python3_introducao/aula01" />
-      <recent name="$PROJECT_DIR$/python3_introducao" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Machine_Learning/Aula02" />
-      <recent name="$PROJECT_DIR$/Machine_Learning" />
-      <recent name="$PROJECT_DIR$/python3_Introducao_a_POO" />
-      <recent name="$PROJECT_DIR$/python3_avancando" />
       <recent name="$PROJECT_DIR$/python3_introducao" />
     </key>
   </component>
@@ -160,8 +165,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.classifica_dados">
-    <configuration name="anki" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.classifica_dados (1)">
+    <configuration name="classifica_dados (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -169,11 +174,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Machine_Learning" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Machine_Learning/Aula03" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Machine_Learning/anki.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Machine_Learning/Aula03/classifica_dados.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -197,7 +202,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="classificacao" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="dados (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -205,11 +210,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Machine_Learning/Aula01" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Machine_Learning/Aula03" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Machine_Learning/Aula01/classificacao.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Machine_Learning/Aula03/dados.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -252,19 +257,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.classificacao" />
-      <item itemvalue="Python.anki" />
       <item itemvalue="Python.meu_exemplo" />
       <item itemvalue="Python.dados" />
       <item itemvalue="Python.classifica_dados" />
+      <item itemvalue="Python.dados (1)" />
+      <item itemvalue="Python.classifica_dados (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.classifica_dados (1)" />
+        <item itemvalue="Python.dados (1)" />
         <item itemvalue="Python.classifica_dados" />
         <item itemvalue="Python.dados" />
         <item itemvalue="Python.meu_exemplo" />
-        <item itemvalue="Python.classificacao" />
-        <item itemvalue="Python.anki" />
       </list>
     </recent_temporary>
   </component>
@@ -294,12 +299,13 @@
     <frame x="1919" y="0" width="1922" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25250396" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25250396" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3297414" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3297414" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.3297414" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3297414" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3297414" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3297414" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -310,60 +316,31 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24986821" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3297414" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3297414" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.3297414" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3297414" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Python Console" order="7" weight="0.3297414" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/python3_avancando/jogos.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python3_introducao/aula08/adivinhacao.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="915">
-          <caret line="61" column="19" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python3_introducao/aula08/forca.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python3_introducao/aula08/jogos.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="29" selection-start-line="29" selection-end-line="30" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/python3_introducao/Perguntas_anki.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -627,9 +604,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Machine_Learning/Aula02/meu_exemplo.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Machine_Learning/Aula02/meu_exemplo.py" />
     <entry file="file://$PROJECT_DIR$/Machine_Learning/Aula01/classificacao.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-28">
@@ -644,9 +619,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Machine_Learning/Aula02/acesso.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Machine_Learning/Aula02/classificacao.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -654,24 +626,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Machine_Learning/anki.py">
+    <entry file="file://$PROJECT_DIR$/Machine_Learning/Aula02/dados.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="33" lean-forward="true" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+        <state relative-caret-position="135">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Machine_Learning/Aula02/acesso.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="65" column="7" selection-start-line="65" selection-start-column="7" selection-end-line="96" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Machine_Learning/Aula02/classifica_dados.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+        <state relative-caret-position="240">
+          <caret line="16" selection-start-line="16" selection-end-line="16" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Machine_Learning/Aula02/dados.py">
+    <entry file="file://$PROJECT_DIR$/Machine_Learning/Aula03/classificacao.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Machine_Learning/Aula03/buscas.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        <state relative-caret-position="15">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Machine_Learning/anki.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1378">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Machine_Learning/Aula03/dados.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Machine_Learning/Aula03/classifica_dados.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#1#46#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

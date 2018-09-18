@@ -7,7 +7,7 @@ def carregar_acessos():
     arquivo = open('acesso.csv','r')
     leitor = csv.reader(arquivo)
 
-    leitor.__next__()
+    next(leitor)
 
     for home, como_funciona, contato, comprou in leitor:
         X.append([int(home), int(como_funciona), int(contato)])

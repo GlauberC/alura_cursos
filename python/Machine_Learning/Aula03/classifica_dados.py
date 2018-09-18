@@ -1,16 +1,19 @@
-from dados import carregar_acessos
-X,Y = carregar_acessos()
 
 from sklearn.naive_bayes import MultinomialNB
+from dados import carregar_acessos
+X,Y = carregar_acessos()
+porcentagem_treino = 0.9
 modelo = MultinomialNB()
 
 
+tamanho_de_treino = int(porcentagem_treino * len(Y))
+tamanho_de_teste = int(len(Y) - tamanho_de_treino)
 
-treino_X = X[:90]
-treino_Y = Y[:90]
+treino_X = X[:tamanho_de_treino]
+treino_Y = Y[:tamanho_de_treino]
 
-teste_X = X[-9:]
-teste_Y = Y[-9:]
+teste_X = X[-tamanho_de_teste:]
+teste_Y = Y[-tamanho_de_teste:]
 
 modelo.fit(treino_X, treino_Y)
 
