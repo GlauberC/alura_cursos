@@ -85,7 +85,7 @@ teste_Y = Y[-9:]
 
 modelo.fit(treino_X, treino_Y)
 resposta_teste = modelo.predict(teste_X)
-diferenca = teste_Y - resposta_teste
+acertou = teste_Y == resposta_teste
 
 
 
@@ -137,5 +137,39 @@ Y = Y_df.values
 
 
 
+# Como saber se o algoritmo treinado está fornecendo um resultado bom ?
 
 
+
+# Compare com um algoritmo que sempre chuta apenas uma resposta, ou sempre 1 ou sempre 0
+# A escolha tem que ser dada pela maior quantidade de dados( maior números de 1s ou maior números de 0s)
+
+
+
+
+
+
+
+
+
+# Para criar o algoritmo de um chute só é necessário contar todos o maior valor entre 0 e 1.
+# Porém os dados podem estar sob a forma de yes ou no, sim ou não.
+# Assim o Python apresenta um forma generica para contar qualquer coisa, como faz?
+
+
+
+from collections import Counter
+acerto_base = max(Counter(Y).values())
+taxa_de_acerto_base = acerto_base / len(Y)
+
+
+
+
+
+
+
+
+# Como funciona o modelo naive bayes
+
+
+# Ele calcula a propabilidade baseado nas caracteristicas e sempre propoe o de maior probabilidade.
