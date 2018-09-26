@@ -173,3 +173,16 @@ taxa_de_acerto_base = acerto_base / len(Y)
 
 
 # Ele calcula a propabilidade baseado nas caracteristicas e sempre propoe o de maior probabilidade.
+
+
+
+
+
+
+
+
+
+#Quais são as 3 fases que utilizamos para realizar um teste ideal?
+
+
+#Treinar mais de um algoritmo, testá-los e escolher o melhor entre eles para testar com os dados reais.
