@@ -12,7 +12,8 @@ Tamanho releativo
 
 # Aula2
 
-
+* Position: absolute - Relativo a pagina do navegador
+* Position: relative - Determina a referência à posição absoluta
 
 ---
 ---
