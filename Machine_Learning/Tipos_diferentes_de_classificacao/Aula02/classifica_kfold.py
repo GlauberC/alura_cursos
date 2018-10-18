@@ -33,6 +33,7 @@ tamanho_de_validacao = int(len(Y) - tamanho_de_treino)
 treino_X = X[0:tamanho_de_treino]
 treino_Y = Y[0:tamanho_de_treino]
 
+
 validacao_X = X[tamanho_de_treino:]
 validacao_Y = Y[tamanho_de_treino:]
 
