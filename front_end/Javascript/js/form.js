@@ -1,14 +1,26 @@
 var botaoAdicionar = document.querySelector("#adicionar-paciente");
 botaoAdicionar.addEventListener("click", function(event){
-    event.preventDefault();
+    event.preventDefault(); // Impede que a página recarregue devido à estrutura do form
 
     var form = document.querySelector(".form-adiciona");
 
     var paciente = obtemPacienteDoFormulario(form);
     
     novaTr = criaTr(paciente);
-    document.querySelector("#tabela-pacientes").appendChild(novaTr);
-    form.reset();
+
+    // Validação
+    erros = validaPaciente(paciente)
+    console.log(erros);
+    if(erros.length > 0){
+        exibeMensagemsDeErro(erros);
+        return;
+    }else{
+        document.querySelector(".mensagens-erro").innerHTML = "";  // Zerar a HTML
+        var tabela = document.querySelector("#tabela-pacientes")
+        tabela.appendChild(novaTr)
+        form.reset();
+    }
+
 });
 
 function obtemPacienteDoFormulario(form){
@@ -54,4 +66,30 @@ function criaTd(dado, classe){
     td.textContent = dado
     td.classList.add(classe);
     return td
+}
+
+function validaPaciente(paciente){
+    var erros = [];
+    if(!validaNome(paciente.nome)){
+        erros.push("Nome inválido")
+    }
+    if(!validaPeso(paciente.peso)){
+        erros.push("O peso do paciente é inválido");
+    }
+    if(!validaAltura(paciente.altura)){
+        erros.push("A altura do paciente é inválida");
+    }
+    if(!validaGordura(paciente.gordura)){
+        erros.push("A porcentagem de gordura do paciente é inválida")
+    }
+    return erros;
+}
+function exibeMensagemsDeErro(erros){
+    var ul = document.querySelector(".mensagens-erro");
+    ul.innerHTML = "";  // Zerar a HTML
+    erros.forEach(function(erro){
+        var li = document.createElement("li")
+        li.textContent = erro;
+        ul.appendChild(li);
+    });
 }
