@@ -5,6 +5,7 @@ tabela.addEventListener("dblclick", function(event){
     var paiAlvoEvento = alvoEvento.parentNode;  // tr
     
     paiAlvoEvento.classList.add("fadeOut");
+    
     setTimeout(function(){
         paiAlvoEvento.remove();
     }, 500);
