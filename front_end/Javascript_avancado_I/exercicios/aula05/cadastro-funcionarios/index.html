@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let funcionarios = [
+            {
+                "nome": "Douglas",
+                "endereco" : "Rua da esquina, 123",
+                "salario" : "4500"
+            },
+            {
+                "nome": "Felipe",
+                "endereco" : "Rua da virada, 456",
+                "salario" : "5000"
+            },
+            {
+                "nome": "Silvio",
+                "endereco" : "Rua da aresta, 789",
+                "salario" : "6000"
+            }
+        ];
+    </script>
+    <div class = "tabela"></div>
+    <script src="js/app/views/FuncionariosView.js"></script>
+
+    <script src="js/app/controller/FuncionariosController.js"></script>
+
+    <script>
+        let funcionariosController = new FuncionariosController();
+    </script>
+</body>
+</html>
