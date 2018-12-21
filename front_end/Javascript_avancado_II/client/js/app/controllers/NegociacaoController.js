@@ -28,6 +28,17 @@ class NegociacaoController{
         // this._mensagemView.update(this._mensagem);
         this._limpaFormulario();
     }
+    importaNegociacoes(){
+        let service = new NegociacaoService();
+        service.obterNegociacaoDaSeamana((erro, negociacoes) => {
+            if(erro){
+                this._mensagem.texto = erro;
+            }else{
+                negociacoes.forEach(negociacao => this._listaNegociacoes.adiciona(negociacao));
+                this._mensagem.texto ="Negociações importadas com sucesso";
+            }
+        });
+    }
     apaga(){
         this._listaNegociacoes.esvazia();
         // this._negociacoesView.update(this._listaNegociacoes);
@@ -47,4 +58,5 @@ class NegociacaoController{
         this._inputValor.value = "0.0";
         this._inputData.focus();
     }
+  
 }
