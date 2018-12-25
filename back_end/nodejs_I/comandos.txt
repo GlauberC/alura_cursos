@@ -1,0 +1,29 @@
+# Criando um pacate Node
+    > npm init
+
+
+# Executando arquivo
+    > node server.js
+
+    --- Após o nodemon ---
+        nodemon server.js
+
+    --- Após modificar o start no package ---
+        npm start
+
+
+# Instalando todas as dependencias
+    > npm install
+    OBS) NÃO COMPARTILHAR A PASTA node_modules
+
+
+# Importando dependencias
+    --- express ---
+        > npm install express@4.16.3 --save-exact
+    
+    --- node moon ---
+        > npm install nodemon@1.18.4 --save-dev --save-exact
+        > sudo npm install -g nodemon@1.18.4 --save-exact
+
+    --- marko ---
+        > npm install marko@4.13.4-1 --save-exact
