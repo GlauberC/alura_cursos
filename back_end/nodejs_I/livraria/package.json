@@ -1,17 +1,20 @@
 {
-  "name": "livraria",
+  "name": "casadocodigo",
   "version": "1.0.0",
-  "description": "Primeiro projeto node, uma livraria",
+  "description": "Livraria Casa do Codigo",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js --ignore *.marko.js"
   },
-  "author": "Glauber Carvalho",
+  "author": "Gabriel Leite",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3",
-    "marko": "4.13.4-1"
+    "body-parser": "1.18.3",
+    "express": "4.16.3",
+    "marko": "4.13.4-1",
+    "method-override": "3.0.0",
+    "sqlite3": "4.0.2"
   },
   "devDependencies": {
     "nodemon": "1.18.4"
