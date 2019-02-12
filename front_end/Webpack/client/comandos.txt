@@ -1,0 +1,9 @@
+sudo npm uninstall babel-cli --save-dev
+
+sudo npm uninstall systemjs --save
+
+sudo npm install webpack@3.1.0 babel-core@6.25.0 --save-dev
+
+sudo npm install babel-loader@7.1.0 --save-dev
+
+sudo npm uninstall babel-plugin-transform-es2015-modules-systemjs --save-dev

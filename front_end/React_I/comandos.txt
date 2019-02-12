@@ -1,0 +1,10 @@
+sudo npm install create-react-app
+
+./node_modules/.bin/create-react-app NOME_DO_PROJETO
+
+Site: https://purecss.io/start/
+ALTERAR class DO HTML PARA className
+
+sudo npm install jquery --save
+
+
