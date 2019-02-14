@@ -3,3 +3,5 @@ Cadastrar informações via Post atraves de eventos
     funões setName, setEmail, setSenha
 
 Atualização da lista após o envio
+Componentes customizados
+Dividir funções do código

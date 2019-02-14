@@ -7,4 +7,6 @@ ALTERAR class DO HTML PARA className
 
 sudo npm install jquery --save
 
+sudo npm i --save pubsub-js
+
 
