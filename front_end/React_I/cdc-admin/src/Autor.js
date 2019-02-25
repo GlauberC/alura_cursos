@@ -5,6 +5,9 @@ import InputCustomizado from './componentes/InputCustomizado';
 import ButtonSubmit from './componentes/ButtonSubmit';
 import TratadorErros from './TratadorErros';
 
+var URL = "http://localhost:3001/autores"
+// var URL = "http://cdc-react.herokuapp.com/api/autores"
+
 
 class FormularioAutor extends Component{
     constructor(){
@@ -19,8 +22,7 @@ class FormularioAutor extends Component{
     enviaForm(evento){
         evento.preventDefault();
         $.ajax({
-            // url:"http://localhost:3001/autores",
-            url:"http://cdc-react.herokuapp.com/api/autores",
+            url:URL,
             contentType:'application/json',
             dataType:'json',
             type:'post',
@@ -105,8 +107,7 @@ export default class AutorBox extends Component{
     }
     componentDidMount(){
         $.ajax({
-            // url: "http://localhost:3001/autores",
-            url:"http://cdc-react.herokuapp.com/api/autores",
+            url: URL,
             dataType: 'json',
             success: function(res){
                 this.setState({lista:res});
