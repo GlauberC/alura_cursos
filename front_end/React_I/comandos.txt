@@ -9,4 +9,4 @@ sudo npm install jquery --save
 
 sudo npm i --save pubsub-js
 
-
+sudo npm i --save react-router
